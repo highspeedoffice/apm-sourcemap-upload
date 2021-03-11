@@ -1,13 +1,24 @@
-name: 'Wait'
-description: 'Wait a designated number of milliseconds'
+name: 'Elasti APM Sourcemap Uploader'
+description: 'Upload sourcemaps in a folder to Elastic APM'
 inputs:
-  milliseconds:  # id of input
-    description: 'number of milliseconds to wait'
+  jsfolder:
+    description: 'Location of generated JS'
     required: true
-    default: '1000'
-outputs:
-  time: # output will be available to future steps
-    description: 'The message to output'
+  server-path:
+    description: 'Server Path'
+    required: true
+  service-version:
+    description: 'Version String'
+    required: true
+  service-name:
+    description: 'Service Name in APM'
+    required: true
+  apm-server:
+    description: 'URL for the APM server'
+    required: true
+  apm-token:
+    description: 'Access token for the APM server'
+    required: true
 runs:
   using: 'node12'
   main: 'dist/index.js'

@@ -1,7 +1,7 @@
 {
-  "name": "javascript-action",
+  "name": "apm-sourcemap-upload",
   "version": "1.0.0",
-  "description": "JavaScript Action Template",
+  "description": "JavaScript Action to upload JS sourcemaps to an Elastic APM server",
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
@@ -11,21 +11,25 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/javascript-action.git"
+    "url": "git+https://github.com/highspeedoffice/apm-sourcemap-upload.git"
   },
   "keywords": [
     "GitHub",
     "Actions",
-    "JavaScript"
+    "JavaScript",
+    "Elastic",
+    "APM"
   ],
-  "author": "",
+  "author": "HighSpeed Office",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/actions/javascript-action/issues"
+    "url": "https://github.com/highspeedoffice/apm-sourcemap-upload/issues"
   },
-  "homepage": "https://github.com/actions/javascript-action#readme",
+  "homepage": "https://github.com/highspeedoffice/apm-sourcemap-upload#readme",
   "dependencies": {
-    "@actions/core": "^1.2.5"
+    "@actions/core": "^1.2.5",
+    "axios": "^0.21.1",
+    "form-data": "^4.0.0"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.27.0",
